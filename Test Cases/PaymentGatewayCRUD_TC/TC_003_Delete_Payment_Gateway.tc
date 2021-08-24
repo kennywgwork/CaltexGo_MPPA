@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_003_Delete_Payment_Gateway</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2aee9df0-e310-41f2-8baf-938d6d27b151</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>33479186-3580-42d3-8c0f-14c1c38feb20</id>
+      <masked>false</masked>
+      <name>ID</name>
+   </variable>
+</TestCaseEntity>
