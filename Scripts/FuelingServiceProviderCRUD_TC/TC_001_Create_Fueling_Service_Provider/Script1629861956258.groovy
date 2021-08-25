@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-Add Response = WS.sendRequest(findTestObject('FuelingServiceProvideCRUD/AddFuelingServiceProvider', [('name') : 'FuelingServiceProviderName\r\n']))
+AddResponse = WS.sendRequest(findTestObject('FuelingServiceProviderCRUD/AddFuelingServiceProvider', [('name') : 'h']))
 
 WS.verifyResponseStatusCode(AddResponse, 200)
 
@@ -30,10 +30,11 @@ def jsonResponse = jsonS.parseText(AddResponse.getResponseText())
 
 ID = jsonResponse.id
 
-WS.verifyElementPropertyValue(AddResponse, 'Name', PaymentGName)
+WS.verifyElementPropertyValue(AddResponse, 'name', name)
 
-GetResponse = WS.sendRequest(findTestObject('PaymentGatewayCRUD/GetSpecificPaymentGateway', [('SpecificID') : ID]))
+GetResponse = WS.sendRequest(findTestObject('FuelingServiceProviderCRUD/GetSpecificFuelingServiceProvider', [('id') : ID]))
+
+println(GetResponse.getResponseText())
 
 WS.verifyResponseStatusCode(GetResponse, 200)
-
 
