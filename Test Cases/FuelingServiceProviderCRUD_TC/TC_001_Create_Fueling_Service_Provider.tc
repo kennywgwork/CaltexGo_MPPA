@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_001_Create_Fueling_Service_Provider</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>896a84d2-7c69-407b-9680-b304e1835d47</testCaseGuid>
+</TestCaseEntity>
