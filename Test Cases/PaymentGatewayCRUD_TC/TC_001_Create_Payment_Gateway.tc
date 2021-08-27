@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>8195d0c6-fc2b-4165-b2fe-fcf757db7715</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'Cybersource - MY'</defaultValue>
       <description></description>
       <id>bc275302-4107-46d6-90e5-88f248d86933</id>
       <masked>false</masked>

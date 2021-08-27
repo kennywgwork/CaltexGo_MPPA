@@ -22,9 +22,9 @@ AddResponse = WS.sendRequest(findTestObject('PaymentGatewayCRUD/AddPaymentGatewa
             , ('ProfileID') : '19ACF053-363F-41B2-80C6-B95012AA3A31', ('AccessKey') : '7fddb35cc1ee3cf1964e1e419844bc9f'
             , ('SecretKey') : 'bc11a1bef8b0408690fa4667e4caca788ddd5631067a4c48afd2ce059b095ee96aa343a7669b45e0b6c1302664f8f23f1cfa5e4d1991473598838e6503515ea4422ba57996974d6795cf2a8f0a542de31199e3acd21440cfb80559005520cd5acfa31163260746e6882ed496a2d91228aae98fe6c9054e7f82211608bdc6a05a'
             , ('OnboardURL') : 'https://testsecureacceptance.cybersource.com/pay ', ('OnboardFinishURL') : 'https://risingstar.strateqgroup.com/PaymentProfile/Finish?Gateway=1&locale={0}'
-            , ('OnboardCancelledURL') : 'NULL', ('OnboardErrorURL') : 'NULL', ('APIEndpoint') : 'abc', ('OnboardTimeout') : 250
-            , ('MaximumCardAllowed') : 4, ('MasterMerchantID') : 'gpsgh065004547701', ('MMKeyFile') : 'C:/fakepath/gpsgh065004547701.p12'
-            , ('DefaultCountry') : 195, ('DefaultCurrency') : 92, ('isAvailable') : true, ('Logo') : 'Logo', ('ClientID') : ' asdsa'
+            , ('OnboardCancelledURL') : 'NULL', ('OnboardErrorURL') : 'NULL', ('APIEndpoint') : 'abc', ('OnboardTimeout') : 1
+            , ('MaximumCardAllowed') : 1, ('MasterMerchantID') : 'gpsgh065004547701', ('MMKeyFile') : 'C:/fakepath/gpsgh065004547701.p12'
+            , ('DefaultCountry') : 195, ('DefaultCurrency') : 92, ('isAvailable') : true, ('Logo') : 'string', ('ClientID') : ' asdsa'
             , ('OnboardingMethod') : 'POST', ('ExcludeLoyalty') : false, ('PreAuthAmount') : 0, ('ConfigurationKey') : 'NULL'
             , ('AcquirerID') : 'APP1', ('CardPrefix') : 'NULL']))
 
@@ -38,7 +38,7 @@ def jsonResponse = jsonS.parseText(AddResponse.getResponseText())
 
 ID = jsonResponse.id
 
-WS.verifyElementPropertyValue(AddResponse, 'Name', PaymentGName)
+WS.verifyElementPropertyValue(AddResponse, 'name', PaymentGName)
 
 GetResponse = WS.sendRequest(findTestObject('PaymentGatewayCRUD/GetSpecificPaymentGateway', [('SpecificID') : ID]))
 

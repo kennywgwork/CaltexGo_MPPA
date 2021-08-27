@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;paymentGatewayProviderId\&quot;: ${PaymentGatewayProId},\n  \&quot;name\&quot;: \&quot;${PaymentGatewayName}\&quot;,\n  \&quot;profileId\&quot;: \&quot;${ProfileID}\&quot;,\n  \&quot;accessKey\&quot;: \&quot;${AccessKey}\&quot;,\n  \&quot;secretKey\&quot;: \&quot;${SecretKey}\&quot;,\n  \&quot;onboardUrl\&quot;: \&quot;${OnboardURL}\&quot;,\n  \&quot;onboardFinishUrl\&quot;: \&quot;${OnboardFinishURL}\&quot;,\n  \&quot;onboardCancelledUrl\&quot;: \&quot;${OnboardCancelledURL}\&quot;,\n  \&quot;onboardErrorUrl\&quot;: \&quot;${OnboardErrorURL}\&quot;,\n  \&quot;apiEndpoint\&quot;: \&quot;${APIEndpoint}\&quot;,\n  \&quot;onboardTimeout\&quot;: ${OnboardTimeout},\n  \&quot;maximumCardAllowed\&quot;: ${MaximumCardAllowed},\n  \&quot;masterMerchantId\&quot;: \&quot;${MasterMerchantID}\&quot;,\n  \&quot;masterMerchantKeyFileName\&quot;: \&quot;${MMKeyFile}\&quot;,\n  \&quot;defaultCountry\&quot;: ${DefaultCountry},\n  \&quot;defaultCurrency\&quot;: ${DefaultCurrency},\n  \&quot;isAvailable\&quot;: ${isAvailable},\n  \&quot;logo\&quot;: \&quot;${Logo}\&quot;,\n  \&quot;clientId\&quot;: \&quot;${ClientID}\&quot;,\n  \&quot;onboardingMethod\&quot;: \&quot;${OnboardingMethod}\&quot;,\n  \&quot;excludeLoyalty\&quot;: ${ExcludeLoyalty},\n  \&quot;preauthAmount\&quot;: ${PreAuthAmount},\n  \&quot;configurationKey\&quot;: \&quot;${ConfigurationKey}\&quot;,\n  \&quot;acquirerId\&quot;: \&quot;${AcquirerID}\&quot;,\n  \&quot;cardPrefix\&quot;: \&quot;${CardPrefix}\&quot;,\n  \&quot;cardLogos\&quot;: [\n    {\n      \&quot;id\&quot;: 1,\n      \&quot;cardName\&quot;: \&quot;string\&quot;,\n      \&quot;cardType\&quot;: \&quot;string\&quot;,\n      \&quot;logo\&quot;: \&quot;string\&quot;,\n      \&quot;acceptanceLogo\&quot;: \&quot;string\&quot;\n    }\n  ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;paymentGatewayProviderId\&quot;: ${PaymentGatewayProId},\n  \&quot;name\&quot;: \&quot;${PaymentGatewayName}\&quot;,\n  \&quot;profileId\&quot;: \&quot;${ProfileID}\&quot;,\n  \&quot;accessKey\&quot;: \&quot;${AccessKey}\&quot;,\n  \&quot;secretKey\&quot;: \&quot;${SecretKey}\&quot;,\n  \&quot;onboardUrl\&quot;: \&quot;${OnboardURL}\&quot;,\n  \&quot;onboardFinishUrl\&quot;: \&quot;${OnboardFinishURL}\&quot;,\n  \&quot;onboardCancelledUrl\&quot;: \&quot;${OnboardCancelledURL}\&quot;,\n  \&quot;onboardErrorUrl\&quot;: \&quot;${OnboardErrorURL}\&quot;,\n  \&quot;apiEndpoint\&quot;: \&quot;${APIEndpoint}\&quot;,\n  \&quot;onboardTimeout\&quot;: ${OnboardTimeout},\n  \&quot;maximumCardAllowed\&quot;: ${MaximumCardAllowed},\n  \&quot;masterMerchantId\&quot;: \&quot;${MasterMerchantID}\&quot;,\n  \&quot;masterMerchantKeyFileName\&quot;: \&quot;${MMKeyFile}\&quot;,\n  \&quot;defaultCountry\&quot;: ${DefaultCountry},\n  \&quot;defaultCurrency\&quot;: ${DefaultCurrency},\n  \&quot;isAvailable\&quot;: ${isAvailable},\n  \&quot;logo\&quot;: \&quot;${Logo}\&quot;,\n  \&quot;clientId\&quot;: \&quot;${ClientID}\&quot;,\n  \&quot;onboardingMethod\&quot;: \&quot;${OnboardingMethod}\&quot;,\n  \&quot;excludeLoyalty\&quot;: ${ExcludeLoyalty},\n  \&quot;preauthAmount\&quot;: ${PreAuthAmount},\n  \&quot;configurationKey\&quot;: \&quot;${ConfigurationKey}\&quot;,\n  \&quot;acquirerId\&quot;: \&quot;${AcquirerID}\&quot;,\n  \&quot;cardPrefix\&quot;: \&quot;${CardPrefix}\&quot;,\n  \&quot;cardLogos\&quot;: [\n    {\n      \&quot;cardName\&quot;: \&quot;string\&quot;,\n      \&quot;cardType\&quot;: \&quot;string\&quot;,\n      \&quot;logo\&quot;: \&quot;string\&quot;,\n      \&quot;acceptanceLogo\&quot;: \&quot;string\&quot;\n    }\n  ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -106,14 +106,14 @@
       <name>APIEndpoint</name>
    </variables>
    <variables>
-      <defaultValue>250</defaultValue>
+      <defaultValue>1</defaultValue>
       <description></description>
       <id>b948c6ee-176b-4d5d-a608-9d97aae94ddd</id>
       <masked>false</masked>
       <name>OnboardTimeout</name>
    </variables>
    <variables>
-      <defaultValue>4</defaultValue>
+      <defaultValue>1</defaultValue>
       <description></description>
       <id>6ed2dd5a-33ed-46d5-befa-ef9018c0b842</id>
       <masked>false</masked>
@@ -155,7 +155,7 @@
       <name>isAvailable</name>
    </variables>
    <variables>
-      <defaultValue>'Logo'</defaultValue>
+      <defaultValue>'string'</defaultValue>
       <description></description>
       <id>ab4f56ae-3b98-4ffa-b922-4cdfc2a385a0</id>
       <masked>false</masked>

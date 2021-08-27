@@ -15,7 +15,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:1203/api/v1/payment/PaymentGateway/${SpecificID}</restUrl>
+   <restUrl>http://localhost:1203/api/v1/payment/payment-gateway/${SpecificID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -25,7 +25,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'21'</defaultValue>
       <description></description>
       <id>893094b4-3a34-4aaa-9a5e-a7069733763f</id>
       <masked>false</masked>
