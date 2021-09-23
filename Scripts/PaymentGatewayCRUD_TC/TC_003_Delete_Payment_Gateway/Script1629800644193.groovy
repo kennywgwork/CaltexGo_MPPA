@@ -42,3 +42,5 @@ GetResponse = WS.sendRequest(findTestObject('PaymentGatewayCRUD/GetSpecificPayme
 
 WS.verifyResponseStatusCode(GetResponse, 400)
 
+WS.verifyResponseStatusCode(GetResponse, 400)
+

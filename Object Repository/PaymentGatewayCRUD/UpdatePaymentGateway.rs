@@ -6,7 +6,7 @@
    <elementGuidId>3fa9791e-754d-450a-a512-47985f96a571</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -23,7 +23,7 @@
       <value>application/json</value>
    </httpHeaderProperties>
    <katalonVersion>8.1.0</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
    <restUrl>http://localhost:1203/api/v1/payment/payment-gateway</restUrl>
@@ -33,10 +33,10 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>3</defaultValue>
+      <defaultValue>27</defaultValue>
       <description></description>
       <id>f942732b-24c1-43d6-ac69-ea24e809ea6d</id>
       <masked>false</masked>
