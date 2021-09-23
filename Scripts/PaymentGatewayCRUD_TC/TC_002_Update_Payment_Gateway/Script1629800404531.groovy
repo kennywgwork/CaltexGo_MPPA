@@ -30,7 +30,7 @@ def jsonResponse = jsonS.parseText(UpdateResponse.getResponseText())
 
 UpdateID = jsonResponse.id
 
-WS.verifyElementPropertyValue(UpdateResponse, 'Name', UpdatePGName)
+WS.verifyElementPropertyValue(UpdateResponse, 'name', UpdatePGName)
 
 GetResponse = WS.sendRequest(findTestObject('PaymentGatewayCRUD/GetSpecificPaymentGateway', [('SpecificID') : UpdateID]))
 
