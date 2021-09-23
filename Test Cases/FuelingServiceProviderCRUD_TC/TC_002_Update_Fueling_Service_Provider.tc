@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_002_Update_Fueling_Service_Provider</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d698bee2-25ff-432d-aaae-1de1fb50e951</testCaseGuid>
+   <variable>
+      <defaultValue>53</defaultValue>
+      <description></description>
+      <id>b5bf3c3a-1cdd-4939-86b6-a515b018b566</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'qwffg'</defaultValue>
+      <description></description>
+      <id>ced7c5a3-ccae-4141-a93b-dc57f79a8087</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+</TestCaseEntity>

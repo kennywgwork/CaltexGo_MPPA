@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>8195d0c6-fc2b-4165-b2fe-fcf757db7715</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'fdsg'</defaultValue>
       <description></description>
       <id>bc275302-4107-46d6-90e5-88f248d86933</id>
       <masked>false</masked>
       <name>PaymentGName</name>
    </variable>
    <variable>
-      <defaultValue>0</defaultValue>
+      <defaultValue>1</defaultValue>
       <description></description>
       <id>76579712-4a68-4f1d-91c2-116df04beffe</id>
       <masked>false</masked>

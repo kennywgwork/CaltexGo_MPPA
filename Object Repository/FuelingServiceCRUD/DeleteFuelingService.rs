@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GetSpecificFuelingServiceProvider</name>
+   <name>DeleteFuelingService</name>
    <tag></tag>
-   <elementGuidId>367ad653-583b-4905-b0f1-0fd560f801f3</elementGuidId>
+   <elementGuidId>33876a0b-3575-45e9-af91-6f25eadf6c15</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -14,8 +14,8 @@
    <katalonVersion>8.1.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:1206/api/v1/forecourt/fueling-service-provider/${id}</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>http://localhost:1206/api/v1/forecourt/fueling-service/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -27,9 +27,16 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>827c1d97-3bc8-4088-84c1-48ca0f5f1c5d</id>
+      <id>6091cf85-eb5f-455b-87b4-4a95736d000b</id>
       <masked>false</masked>
-      <name>id</name>
+      <name>variable</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b6bd63da-8393-443d-bc16-5cf0af0ed35c</id>
+      <masked>false</masked>
+      <name>variable_0</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

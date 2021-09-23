@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GetSpecificFuelingServiceProvider</name>
+   <name>GetSpecificFuelingService</name>
    <tag></tag>
-   <elementGuidId>367ad653-583b-4905-b0f1-0fd560f801f3</elementGuidId>
+   <elementGuidId>a11c3351-f278-4037-af5d-d82bac7ed18c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:1206/api/v1/forecourt/fueling-service-provider/${id}</restUrl>
+   <restUrl>http://localhost:1206/api/v1/forecourt/fueling-service/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -27,7 +27,7 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>827c1d97-3bc8-4088-84c1-48ca0f5f1c5d</id>
+      <id>93f54276-feb5-4f26-bda2-a074a160fb70</id>
       <masked>false</masked>
       <name>id</name>
    </variables>

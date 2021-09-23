@@ -18,23 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-AddResponse = WS.sendRequest(findTestObject('FuelingServiceProviderCRUD/AddFuelingServiceProvider', [('name') : name]))
+a = WS.sendRequest(findTestObject('FuelingServiceProviderCRUD/UpdateFuelingServiceProvider' ,[('id') : id, ('name') : name]))
 
-WS.verifyResponseStatusCode(AddResponse, 200)
+WS.verifyResponseStatusCode(a, 200)
 
-println(AddResponse.getResponseText())
-
-def jsonS = new JsonSlurper()
-
-def jsonResponse = jsonS.parseText(AddResponse.getResponseText())
-
-ID = jsonResponse.id
-
-WS.verifyElementPropertyValue(AddResponse, 'name', name)
-
-GetResponse = WS.sendRequest(findTestObject('FuelingServiceProviderCRUD/GetSpecificFuelingServiceProvider', [('id') : ID]))
-
-println(GetResponse.getResponseText())
-
-WS.verifyResponseStatusCode(GetResponse, 200)
 

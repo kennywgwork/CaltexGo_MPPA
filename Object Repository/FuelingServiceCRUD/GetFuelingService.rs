@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GetSpecificFuelingServiceProvider</name>
+   <name>GetFuelingService</name>
    <tag></tag>
-   <elementGuidId>367ad653-583b-4905-b0f1-0fd560f801f3</elementGuidId>
+   <elementGuidId>6b60c7e3-f2f4-4ff4-89bb-7f887d9d7179</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:1206/api/v1/forecourt/fueling-service-provider/${id}</restUrl>
+   <restUrl>http://localhost:1206/api/v1/forecourt/fueling-service?PageNumber=${PageNumber}&amp;PageSize=${PageSize}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -24,13 +24,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>827c1d97-3bc8-4088-84c1-48ca0f5f1c5d</id>
-      <masked>false</masked>
-      <name>id</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

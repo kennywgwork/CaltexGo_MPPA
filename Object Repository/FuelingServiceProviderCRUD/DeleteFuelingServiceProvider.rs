@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GetSpecificFuelingServiceProvider</name>
+   <name>DeleteFuelingServiceProvider</name>
    <tag></tag>
-   <elementGuidId>367ad653-583b-4905-b0f1-0fd560f801f3</elementGuidId>
+   <elementGuidId>08be1588-a639-4201-8939-ef39e7c797a1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -14,7 +14,7 @@
    <katalonVersion>8.1.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
+   <restRequestMethod>DELETE</restRequestMethod>
    <restUrl>http://localhost:1206/api/v1/forecourt/fueling-service-provider/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -27,7 +27,7 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>827c1d97-3bc8-4088-84c1-48ca0f5f1c5d</id>
+      <id>73480070-42ca-468f-ba28-ed0ce46ba306</id>
       <masked>false</masked>
       <name>id</name>
    </variables>
